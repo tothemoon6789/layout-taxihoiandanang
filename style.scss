@@ -292,20 +292,24 @@ html {
         display: grid;
         padding: 10px !important;
         background-color: $secondary-color;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
         grid-gap: 5px;
 
-        div {
-
+        .box {
+           width: 100%;
             text-align: center;
-
+            overflow: hidden;
+            
             a {
+                width: 100%;
                 background-color: white;
                 display: inline-block;
                 padding: 5px 10px !important;
                 color: $secondary-color;
                 font-weight: 400 !important;
-
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis !important;
                 :hover {
                     background-color: blue !important;
                 }
@@ -335,6 +339,7 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
     position: relative;
 
     //   .shadow {
@@ -545,6 +550,7 @@ html {
     background-color: $secondary-color;
     text-align: center;
     color: $primary-color;
+    margin-bottom: 0px !important;
 
     img {
         width: 200px;
@@ -671,5 +677,8 @@ html {
             margin-top: 0px !important;
             padding: 10px !important;
         }
+    }
+    .footer {
+        margin-bottom: 70px !important;
     }
 }
