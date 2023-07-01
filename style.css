@@ -1,0 +1,487 @@
+* {
+  padding: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .left img {
+  height: 100%;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header .right {
+  margin-right: 100px !important;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  font-size: large;
+}
+.header .right li {
+  margin-right: 15px !important;
+}
+.header .right li a {
+  display: inline-block;
+  padding: 10px 30px !important;
+  font-weight: 700;
+  color: #19381F;
+}
+.header .right li i {
+  margin-right: 10px !important;
+}
+.header .right li:nth-child(1) {
+  border: 1px solid rgba(25, 56, 31, 0.2);
+}
+.header .right li:nth-child(1):hover {
+  background-color: rgba(238, 232, 44, 0.8);
+}
+.header .right li:nth-child(2) {
+  border: 1px solid rgba(25, 56, 31, 0.2);
+}
+.header .right li:nth-child(2):hover {
+  background-color: rgba(25, 56, 31, 0.8);
+}
+.header .right li:nth-child(2):hover a {
+  color: #EEE82C;
+}
+.header .right li:nth-child(3) {
+  background-color: #19381F;
+  border: 1px solid rgba(25, 56, 31, 0.6);
+}
+.header .right li:nth-child(3) a {
+  color: #EEE82C !important;
+}
+.header .right li:nth-child(3):hover {
+  background-color: rgba(25, 56, 31, 0.6);
+}
+.header .right li:nth-child(4) {
+  background-color: #EEE82C;
+  border: 1px solid #EEE82C;
+}
+.header .right li:nth-child(4) a {
+  color: #19381F !important;
+}
+.header .right li:nth-child(4):hover {
+  background-color: rgba(238, 232, 44, 0.6);
+}
+.header .right li:nth-child(5) {
+  background-color: #EEE82C;
+  border: 1px solid #EEE82C;
+  padding: 10px 13px !important;
+}
+.header .right li:nth-child(5) i {
+  color: #19381F !important;
+  margin-right: 0 !important;
+}
+.header .right li:nth-child(5):hover {
+  background-color: rgba(238, 232, 44, 0.6);
+}
+.header .right li:nth-child(6) {
+  border: 1px solid #EEE82C;
+  padding: 10px 13px !important;
+}
+.header .right li:nth-child(6) i {
+  color: #19381F !important;
+  margin-right: 0 !important;
+}
+.header .right li:nth-child(6):hover {
+  background-color: rgba(238, 232, 44, 0.6);
+}
+
+.carousel {
+  width: 100%;
+  height: calc(100vh - 80px);
+  position: relative;
+  overflow: hidden;
+}
+.carousel img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+}
+.carousel .shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(25, 56, 31, 0.8);
+}
+.carousel .content {
+  position: absolute;
+  color: #EEE82C;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.carousel .content h3 {
+  font-weight: 500;
+}
+.carousel .content h1 {
+  font-weight: 700;
+}
+.carousel .content i {
+  color: white;
+}
+.carousel .content .row {
+  display: block !important;
+}
+.service {
+  margin-top: -100px !important;
+}
+.service img {
+  width: 100%;
+  height: 25vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  padding: 8px !important;
+  border: 1px solid rgba(25, 56, 31, 0.2);
+}
+
+.product .col-12 {
+  padding: 10px !important;
+}
+.product table thead {
+  background-color: #19381F !important;
+  color: #EEE82C;
+}
+.product table thead tr th {
+  color: white;
+  padding: 15px !important;
+}
+.product table thead tr th i {
+  color: #EEE82C;
+}
+.product table thead tr th span {
+  font-weight: 300;
+}
+.product table tbody tr {
+  background-color: rgba(25, 56, 31, 0.8) !important;
+  color: white;
+}
+.product table tbody tr td {
+  padding: 10px !important;
+}
+.product table tbody tr td:nth-child(1) {
+  width: 40%;
+  text-align: center;
+  vertical-align: middle;
+}
+.product table tbody tr td:nth-child(2) {
+  width: 30%;
+  text-align: center;
+  vertical-align: middle;
+}
+.product table tbody tr td:nth-child(3) {
+  width: 30%;
+  text-align: center;
+  vertical-align: middle;
+}
+.product table tbody tr td:last-child {
+  color: #EEE82C !important;
+  font-weight: 700;
+}
+.product .bottom {
+  display: grid;
+  padding: 10px !important;
+  background-color: #19381F;
+  grid-template-columns: auto auto auto;
+  grid-gap: 5px;
+}
+.product .bottom div {
+  text-align: center;
+}
+.product .bottom div a {
+  background-color: white;
+  display: inline-block;
+  padding: 5px 10px !important;
+  color: #19381F;
+  font-weight: 400 !important;
+}
+.product .bottom div a :hover {
+  background-color: blue !important;
+}
+.product .bottom div a i {
+  margin-right: 10px !important;
+}
+.product .bottom div:nth-child(1) a {
+  background-color: transparent;
+  color: #EEE82C;
+}
+
+.quaranty {
+  height: 400px !important;
+  background-image: url("./images/road-trip.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+.quaranty .col-12 {
+  padding: 30px !important;
+  margin-top: 40px !important;
+}
+.quaranty .col-12 .wrap {
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  padding: 30px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.quaranty .col-12 .wrap i {
+  font-size: 40px;
+  color: #EEE82C;
+}
+.quaranty .col-12 .wrap p {
+  text-align: center;
+  color: white;
+  font-weight: 100;
+}
+.quaranty .col-12 .wrap span {
+  font-weight: 700;
+  font-size: 24px;
+  color: #19381F;
+}
+
+.testimonial .item {
+  padding: 40px !important;
+  background-color: rgba(25, 56, 31, 0.5);
+  margin: 15px !important;
+}
+.testimonial .item .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px !important;
+}
+.testimonial .item .top i {
+  color: #19381F;
+  font-size: 40px !important;
+}
+.testimonial .item .top span {
+  font-weight: 500;
+  font-size: 18px;
+}
+.testimonial .item .top .star i {
+  color: #EEE82C !important;
+  font-size: 20px !important;
+}
+.testimonial .item .content {
+  text-align: justify;
+  color: white;
+}
+.testimonial .item .author {
+  font-weight: 500 !important;
+  margin-top: 10px !important;
+}
+
+.left-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.left-nav ul {
+  height: 100vh;
+  min-width: 200px;
+  display: inline-block;
+  background-color: #19381F;
+}
+.left-nav ul li a {
+  display: block;
+  color: #EEE82C;
+  border-bottom: 1px solid rgba(238, 232, 44, 0.1);
+  padding: 5px 20px !important;
+}
+.left-nav ul li a:hover {
+  background-color: rgba(238, 232, 44, 0.2);
+}
+.left-nav ul .top {
+  display: flex;
+  justify-content: end;
+}
+.left-nav ul .top button {
+  background-color: #EEE82C;
+  color: #19381F;
+  font-weight: 700;
+  border: none;
+  padding: 10px !important;
+}
+
+.booking h3 {
+  font-weight: 700 !important;
+}
+.booking .left {
+  margin: 10px !important;
+  background-color: #EEE82C;
+  color: #19381F;
+  padding: 50px !important;
+}
+.booking .left input,
+.booking .left textarea {
+  margin-top: 10px !important;
+  padding: 5px 10px !important;
+  border: 1px solid rgba(25, 56, 31, 0.2);
+}
+.booking .left button {
+  background-color: #19381F;
+  color: #EEE82C;
+  padding: 10px !important;
+  margin-top: 10px !important;
+}
+.booking .right {
+  padding: 20px !important;
+}
+.booking .right .info a {
+  display: inline-block;
+  margin-top: 20px !important;
+  padding: 10px 20px !important;
+  background-color: rgba(25, 56, 31, 0.8);
+  color: #EEE82C;
+  margin-bottom: 20px !important;
+}
+.booking .right .content-info {
+  display: flex !important;
+}
+.booking .right .content-info .left-icon {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(238, 232, 44, 0.7);
+}
+.booking .right .content-info .left-icon i {
+  font-size: 80px;
+}
+.booking .right .content-info .right-content {
+  padding: 0 10px 10px 10px !important;
+}
+
+.footer {
+  background-color: #19381F;
+  text-align: center;
+  color: #EEE82C;
+}
+.footer img {
+  width: 200px;
+  height: 200px;
+}
+.footer a {
+  font-size: 30px;
+  padding: 10px 20px !important;
+  display: inline-block;
+  background-color: #EEE82C;
+  color: #19381F;
+}
+
+.left-contact {
+  position: fixed;
+  top: 30%;
+  left: 0;
+  z-index: 9000;
+}
+.left-contact ul li {
+  padding: 10px 10px !important;
+  background-color: #EEE82C;
+  margin-bottom: 10px !important;
+  transition: all 0.15s;
+  transform: translateX(-115px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.left-contact ul li a {
+  color: #19381F !important;
+  opacity: 0;
+  font-weight: 700;
+  font-size: 25px;
+}
+.left-contact ul li i {
+  font-size: 40px;
+  color: #19381F;
+}
+
+.footer-contact {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #19381F;
+  display: flex;
+  justify-content: center;
+  padding: 5px !important;
+}
+.footer-contact .wrap-item {
+  background-color: #19381F;
+  width: 80px;
+  height: 80px;
+  margin-top: -20px !important;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-contact .wrap-item .item {
+  width: 60px !important;
+  height: 60px !important;
+  margin-bottom: -5px !important;
+}
+.footer-contact .item {
+  width: 50px;
+  height: 50px;
+  margin: 5px !important;
+  background-color: yellow;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.footer-contact .item i {
+  font-size: 30px;
+  color: #19381F;
+}
+
+@media (max-width: 768px) {
+  .header .right {
+    margin-right: 10px !important;
+  }
+  .service img {
+    height: 50vw;
+  }
+  .quaranty {
+    height: 650px !important;
+    padding-top: 30px !important;
+  }
+  .quaranty .col-12 {
+    margin-top: 0px !important;
+    padding: 10px !important;
+  }
+}/*# sourceMappingURL=style.css.map */
