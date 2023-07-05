@@ -3,20 +3,20 @@
     xmlns="http://www.w3.org/2000/svg">
     <style>
         .st0 {
-            fill: #19381F
+            fill: #1DAD4B
         }
 
         .st1 {
-            fill: #19381F
+            fill: #1DAD4B
         }
 
         .st2 {
-            fill: #19381F
+            fill: #1DAD4B
         }
 
         .st3 {
             fill: none;
-            stroke: #19381F;
+            stroke: #1DAD4B;
             stroke-width: 2;
             stroke-miterlimit: 10
         }
