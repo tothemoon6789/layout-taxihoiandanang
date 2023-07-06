@@ -296,30 +296,33 @@ html {
 
     tbody {
       tr {
+        border-bottom: 2px solid;
         background-color: rgba(
           $color: $secondary-color,
           $alpha: 0.8
         ) !important;
         color: white;
-
+        font-weight: 700;
         td {
           padding: 10px !important;
 
           &:nth-child(1) {
             width: 30% !important;
-            text-align: start;
+            text-align: center;
             vertical-align: middle;
+            text-transform: uppercase;
           }
 
           &:nth-child(2) {
             width: 30% !important;
-            text-align: start;
+            text-align: center;
             vertical-align: middle;
+            text-transform: uppercase;
           }
 
           &:nth-child(3) {
             width: 40% !important;
-            text-align: left;
+            text-align: center;
             vertical-align: middle;
           }
 
@@ -667,7 +670,7 @@ html {
   padding: 5px !important;
 
   .wrap-item {
-    background-color: $secondary-color;
+    background-color: white;
     width: 80px;
     height: 80px;
     margin-top: -20px !important;
@@ -676,10 +679,13 @@ html {
     justify-content: center;
     align-items: center;
     .item {
-      // background-color: blue !important;
+      background-color: white;
       width: 60px !important;
       height: 60px !important;
-      margin-bottom: -5px !important;
+      // margin-bottom: -5px !important;
+      i {
+        font-size: 50px;
+      }
     }
   }
 
@@ -688,7 +694,8 @@ html {
     height: 50px;
     margin: 5px !important;
 
-    background-color: yellow;
+    background-color: white;
+    // border: 1px solid white;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -696,8 +703,9 @@ html {
     cursor: pointer;
 
     i {
-      font-size: 30px;
+      font-size: 35px;
       color: $secondary-color;
+      
     }
   }
 }

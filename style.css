@@ -246,25 +246,29 @@ html {
   font-size: 18px;
 }
 .product table tbody tr {
+  border-bottom: 2px solid;
   background-color: rgba(29, 173, 75, 0.8) !important;
   color: white;
+  font-weight: 700;
 }
 .product table tbody tr td {
   padding: 10px !important;
 }
 .product table tbody tr td:nth-child(1) {
   width: 30% !important;
-  text-align: start;
+  text-align: center;
   vertical-align: middle;
+  text-transform: uppercase;
 }
 .product table tbody tr td:nth-child(2) {
   width: 30% !important;
-  text-align: start;
+  text-align: center;
   vertical-align: middle;
+  text-transform: uppercase;
 }
 .product table tbody tr td:nth-child(3) {
   width: 40% !important;
-  text-align: left;
+  text-align: center;
   vertical-align: middle;
 }
 .product table tbody tr td:last-child {
@@ -532,7 +536,7 @@ html {
   padding: 5px !important;
 }
 .footer-contact .wrap-item {
-  background-color: #1DAD4B;
+  background-color: white;
   width: 80px;
   height: 80px;
   margin-top: -20px !important;
@@ -542,15 +546,18 @@ html {
   align-items: center;
 }
 .footer-contact .wrap-item .item {
+  background-color: white;
   width: 60px !important;
   height: 60px !important;
-  margin-bottom: -5px !important;
+}
+.footer-contact .wrap-item .item i {
+  font-size: 50px;
 }
 .footer-contact .item {
   width: 50px;
   height: 50px;
   margin: 5px !important;
-  background-color: yellow;
+  background-color: white;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -558,7 +565,7 @@ html {
   cursor: pointer;
 }
 .footer-contact .item i {
-  font-size: 30px;
+  font-size: 35px;
   color: #1DAD4B;
 }
 
